@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <title>Alta de personas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input{
+                display: block;
+            }
+            #incluir{
+                margin-block:1em; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Alta de personas</h1>
+        <form method="post" action="AddPersona">
+            <label>Nombre: </label>
+            <input type="text" name="nombre" required="required" autofocus="autofocus"/>
+            <label>Apellidos: </label>
+            <input type="text" name="apeliidos" required="required" />
+            <label>Edad: </label>
+            <input type="number" name="edad" min="0" required="required" />
+            <input type="submit" name="incluir" id="incluir" value="Añadir"/>
+        </form>
+            
+            
+           
+</html>
